@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransparencyPH - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="nav-container">
+        <h1><a href="index.html">TransparencyPH</a></h1>
+        <nav>
+
+            <a href="index.html" class="active">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="reports.html">Reports</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <form action="search.html" method="get" class="search-form">
+            <input type="text" name="q" id="searchBar" placeholder="Search projects...">
+            <button type="submit">Search</button>
+        </form>
+
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Philippine Infrastructure Transparency</h2>
+    <p>Tracking ongoing, completed, delayed, and planned projects nationwide.</p>
+    <a href="projects.html" class="btn">View All Projects</a>
+</section>
+
+<!-- Featured Projects -->
+<main>
+    <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <a href="projects/binondo.html" class="card-link">
+            <div class="card completed">
+                <img src="images/project1.jpg" alt="Binondo Bridge">
+                <div class="card-body">
+                    <span class="status">Completed</span>
+                    <h3>Binondo–Intramuros Bridge</h3>
+                    <p class="location">Manila, Metro Manila</p>
+                    <p>Modern bridge connecting Manila’s historic districts.</p>
+                </div>
+            </div>
+            </a>
+
+            <div class="card in-progress">
+                <img src="images/project21.jpg" alt="Metro Manila Subway">
+                <div class="card-body">
+                    <span class="status">In Progress</span>
+                    <h3>Metro Manila Subway</h3>
+                    <p class="location">Quezon City to Pasay</p>
+                    <p>First underground railway in the Philippines.</p>
+                </div>
+            </div>
+
+            <div class="card delayed">
+                <img src="images/project56.jpg" alt="Mindanao Railway">
+                <div class="card-body">
+                    <span class="status">Delayed</span>
+                    <h3>Mindanao Railway</h3>
+                    <p class="location">Tagum–Davao–Digos</p>
+                    <p>Railway line project facing delays due to right-of-way issues.</p>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">View More Projects</a>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 TransparencyPH | Infrastructure Tracker</p>
+</footer>
+
+</body>
+</html>
