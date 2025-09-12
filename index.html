@@ -13,7 +13,6 @@
     <div class="nav-container">
         <h1><a href="index.html">TransparencyPH</a></h1>
         <nav>
-
             <a href="index.html" class="active">Home</a>
             <a href="projects.html">Projects</a>
             <a href="reports.html">Reports</a>
@@ -22,9 +21,8 @@
         </nav>
         <form action="search.html" method="get" class="search-form">
             <input type="text" name="q" id="searchBar" placeholder="Search projects...">
-            <button type="submit">Search</button>
-        </form>
 
+        </form>
     </div>
 </header>
 
@@ -39,46 +37,121 @@
 <main>
     <section class="featured-projects">
         <h2>Featured Projects</h2>
+
+        <!-- Filters -->
+        <div style="margin: 20px 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+            <span class="status in-progress">In Progress</span>
+            <span class="status completed">Completed</span>
+            <span class="status planning">Planning</span>
+            <span class="status delayed">Delayed</span>
+
+            <select style="margin-left:auto; padding: 6px 10px; border-radius: 6px; border: 1px solid #ddd;">
+                <option>All Status</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+                <option>Planning</option>
+                <option>Delayed</option>
+            </select>
+
+            <select style="padding: 6px 10px; border-radius: 6px; border: 1px solid #ddd;">
+                <option>All Regions</option>
+                <option>Metro Manila</option>
+                <option>Luzon</option>
+                <option>Visayas</option>
+                <option>Mindanao</option>
+            </select>
+        </div>
+
+        <!-- Project Grid -->
         <div class="project-grid">
+
+            <!-- Project 1 -->
             <a href="projects/binondo.html" class="card-link">
-            <div class="card completed">
-                <img src="images/project1.jpg" alt="Binondo Bridge">
-                <div class="card-body">
-                    <span class="status">Completed</span>
-                    <h3>Binondo–Intramuros Bridge</h3>
-                    <p class="location">Manila, Metro Manila</p>
-                    <p>Modern bridge connecting Manila’s historic districts.</p>
+                <div class="card completed">
+                    <img src="pictures/Binondo-Intramuros bridge.jpg" alt="Binondo Bridge">
+                    <div class="card-body">
+                        <span class="status">Completed</span>
+                        <h3>Binondo–Intramuros Bridge</h3>
+                        <p class="location">Manila, Metro Manila</p>
+                        <p>Modern 680-meter cable-stayed bridge connecting historic districts.</p>
+                    </div>
                 </div>
-            </div>
             </a>
 
-            <div class="card in-progress">
-                <img src="images/project21.jpg" alt="Metro Manila Subway">
-                <div class="card-body">
-                    <span class="status">In Progress</span>
-                    <h3>Metro Manila Subway</h3>
-                    <p class="location">Quezon City to Pasay</p>
-                    <p>First underground railway in the Philippines.</p>
+            <!-- Project 2 -->
+            <a href="projects/metro_manila_subway.html" class="card-link">
+                <div class="card in-progress">
+                    <img src="pictures/metro manilla subway.jpg" alt="Metro Manila Subway">
+                    <div class="card-body">
+                        <span class="status">In Progress</span>
+                        <h3>Metro Manila Subway</h3>
+                        <p class="location">Quezon City to Pasay</p>
+                        <p>First underground railway in the Philippines, spanning 33 km.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="card delayed">
-                <img src="images/project56.jpg" alt="Mindanao Railway">
-                <div class="card-body">
-                    <span class="status">Delayed</span>
-                    <h3>Mindanao Railway</h3>
-                    <p class="location">Tagum–Davao–Digos</p>
-                    <p>Railway line project facing delays due to right-of-way issues.</p>
+            <!-- Project 3 -->
+            <a href="projects/mindanao_railway.html" class="card-link">
+                <div class="card delayed">
+                    <img src="pictures/mindanao railway.webp" alt="Mindanao Railway">
+                    <div class="card-body">
+                        <span class="status">Delayed</span>
+                        <h3>Mindanao Railway</h3>
+                        <p class="location">Tagum–Davao–Digos</p>
+                        <p>Railway project facing right-of-way issues and funding delays.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="projects/skyway_stage3.html" class="card-link">
+                <div class="card completed">
+                    <img src="pictures/skyway stage 3.webp" alt="Skyway Stage 3">
+                    <div class="card-body">
+                        <span class="status">Completed</span>
+                        <h3>Skyway Stage 3</h3>
+                        <p class="location">Metro Manila</p>
+                        <p>18.8 km elevated expressway connecting North & South Luzon.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="projects/mactan_airport.html" class="card-link">
+                <div class="card completed">
+                    <img src="pictures/mactan airport.png" alt="Mactan Airport">
+                    <div class="card-body">
+                        <span class="status">Completed</span>
+                        <h3>Mactan–Cebu International Airport Expansion</h3>
+                        <p class="location">Cebu, Visayas</p>
+                        <p>New terminal doubling passenger capacity to 12.5M annually.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="projects/new_clark_city.html" class="card-link">
+                <div class="card in-progress">
+                    <img src="pictures/new clark city.jpg" alt="New Clark City">
+                    <div class="card-body">
+                        <span class="status">In Progress</span>
+                        <h3>New Clark City</h3>
+                        <p class="location">Tarlac, Luzon</p>
+                        <p>Smart, green metropolis under development as future capital.</p>
+                    </div>
+                </div>
+            </a>
+
         </div>
+
         <a href="projects.html" class="btn">View More Projects</a>
     </section>
 </main>
 
 <!-- Footer -->
 <footer>
-    <p>© 2024 TransparencyPH | Infrastructure Tracker</p>
+    <p>© 2025 TransparencyPH | Infrastructure Tracker</p>
 </footer>
 
 </body>
