@@ -3,156 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TransparencyPH - Home</title>
+    <title>Inequality in the Philippines | AwarenessPH</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- Navbar -->
 <header>
     <div class="nav-container">
-        <h1><a href="index.html">TransparencyPH</a></h1>
+        <h1>Inequality in the Philippines</h1>
         <nav>
             <a href="index.html" class="active">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="reports.html">Reports</a>
-            <a href="about.html">About</a>
+            <a href="causes.html">Causes</a>
+            <a href="stats.html">Statistics</a>
+            <a href="news.html">News</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <form action="search.html" method="get" class="search-form">
-            <input type="text" name="q" id="searchBar" placeholder="Search projects...">
-
-        </form>
     </div>
 </header>
 
-<!-- Hero Section -->
-<section class="hero">
-    <h2>Philippine Infrastructure Transparency</h2>
-    <p>Tracking ongoing, completed, delayed, and planned projects nationwide.</p>
-    <a href="projects.html" class="btn">View All Projects</a>
-</section>
-
-<!-- Featured Projects -->
 <main>
-    <section class="featured-projects">
-        <h2>Featured Projects</h2>
+    <section class="hero">
+        <h2>Bridging the Gap: A Closer Look at Inequality</h2>
+        <p>
+            The Philippines has one of the fastest growing economies in Southeast Asia. Yet,
+            millions of Filipinos still live below the poverty line. Inequality in income,
+            education, healthcare, and access to opportunities continues to divide society.
+            This website aims to spread awareness, share real data, and inspire action.
+        </p>
+    </section>
 
-        <!-- Filters -->
-        <div style="margin: 20px 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
-            <span class="status in-progress">In Progress</span>
-            <span class="status completed">Completed</span>
-            <span class="status planning">Planning</span>
-            <span class="status delayed">Delayed</span>
+    <section class="overview">
+        <h3>Understanding the Issue</h3>
+        <p>
+            Inequality is more than just poverty—it is about unfair differences in wealth,
+            resources, and opportunities. The Philippines struggles with regional disparities
+            (Luzon vs. Mindanao), gender gaps, and lack of social protection for vulnerable
+            groups. Addressing inequality means ensuring that growth benefits everyone, not
+            just the wealthy.
+        </p>
+        <img src="pictures/inequality illustration.webp" alt="Illustration on inequality" class="responsive-img">
+    </section>
 
-            <select style="margin-left:auto; padding: 6px 10px; border-radius: 6px; border: 1px solid #ddd;">
-                <option>All Status</option>
-                <option>In Progress</option>
-                <option>Completed</option>
-                <option>Planning</option>
-                <option>Delayed</option>
-            </select>
-
-            <select style="padding: 6px 10px; border-radius: 6px; border: 1px solid #ddd;">
-                <option>All Regions</option>
-                <option>Metro Manila</option>
-                <option>Luzon</option>
-                <option>Visayas</option>
-                <option>Mindanao</option>
-            </select>
-        </div>
-
-        <!-- Project Grid -->
-        <div class="project-grid">
-
-            <!-- Project 1 -->
-            <a href="projects/binondo.html" class="card-link">
-                <div class="card completed">
-                    <img src="pictures/Binondo-Intramuros bridge.jpg" alt="Binondo Bridge">
-                    <div class="card-body">
-                        <span class="status">Completed</span>
-                        <h3>Binondo–Intramuros Bridge</h3>
-                        <p class="location">Manila, Metro Manila</p>
-                        <p>Modern 680-meter cable-stayed bridge connecting historic districts.</p>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 2 -->
-            <a href="projects/metro_manila_subway.html" class="card-link">
-                <div class="card in-progress">
-                    <img src="pictures/metro manilla subway.jpg" alt="Metro Manila Subway">
-                    <div class="card-body">
-                        <span class="status">In Progress</span>
-                        <h3>Metro Manila Subway</h3>
-                        <p class="location">Quezon City to Pasay</p>
-                        <p>First underground railway in the Philippines, spanning 33 km.</p>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 3 -->
-            <a href="projects/mindanao_railway.html" class="card-link">
-                <div class="card delayed">
-                    <img src="pictures/mindanao railway.webp" alt="Mindanao Railway">
-                    <div class="card-body">
-                        <span class="status">Delayed</span>
-                        <h3>Mindanao Railway</h3>
-                        <p class="location">Tagum–Davao–Digos</p>
-                        <p>Railway project facing right-of-way issues and funding delays.</p>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 4 -->
-            <a href="projects/skyway_stage3.html" class="card-link">
-                <div class="card completed">
-                    <img src="pictures/skyway stage 3.webp" alt="Skyway Stage 3">
-                    <div class="card-body">
-                        <span class="status">Completed</span>
-                        <h3>Skyway Stage 3</h3>
-                        <p class="location">Metro Manila</p>
-                        <p>18.8 km elevated expressway connecting North & South Luzon.</p>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 5 -->
-            <a href="projects/mactan_airport.html" class="card-link">
-                <div class="card completed">
-                    <img src="pictures/mactan airport.png" alt="Mactan Airport">
-                    <div class="card-body">
-                        <span class="status">Completed</span>
-                        <h3>Mactan–Cebu International Airport Expansion</h3>
-                        <p class="location">Cebu, Visayas</p>
-                        <p>New terminal doubling passenger capacity to 12.5M annually.</p>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 6 -->
-            <a href="projects/new_clark_city.html" class="card-link">
-                <div class="card in-progress">
-                    <img src="pictures/new clark city.jpg" alt="New Clark City">
-                    <div class="card-body">
-                        <span class="status">In Progress</span>
-                        <h3>New Clark City</h3>
-                        <p class="location">Tarlac, Luzon</p>
-                        <p>Smart, green metropolis under development as future capital.</p>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-        <a href="projects.html" class="btn">View More Projects</a>
+    <section class="quick-links">
+        <h3>Learn More</h3>
+        <ul>
+            <li><a href="causes.html">Causes of Inequality</a></li>
+            <li><a href="stats.html">Statistical Data & Infographics</a></li>
+            <li><a href="news.html">News, Advocacy & Events</a></li>
+            <li><a href="contact.html">Get Involved</a></li>
+        </ul>
     </section>
 </main>
 
-<!-- Footer -->
 <footer>
-    <p>© 2025 TransparencyPH | Infrastructure Tracker</p>
+    <p>© 2025 AwarenessPH | IT/CS 312 Project | For educational purposes only</p>
 </footer>
-
 </body>
 </html>

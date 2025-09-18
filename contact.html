@@ -3,55 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - TransparencyPH</title>
+    <title>Contact & Resources | AwarenessPH</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- Navbar -->
 <header>
     <div class="nav-container">
-        <h1><a href="index.html">TransparencyPH</a></h1>
+        <h1>Inequality in the Philippines</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="reports.html">Reports</a>
-            <a href="about.html">About</a>
+            <a href="causes.html">Causes</a>
+            <a href="stats.html">Statistics</a>
+            <a href="news.html">News</a>
             <a href="contact.html" class="active">Contact</a>
         </nav>
-        <form action="search.html" method="get" class="search-form">
-            <input type="text" name="q" id="searchBar" placeholder="Search projects...">
-            <button type="submit">Search</button>
-        </form>
-
     </div>
 </header>
 
-<!-- Content -->
 <main>
-    <section class="content-page">
+    <section>
         <h2>Contact Us</h2>
-        <p>If you have questions, suggestions, or project updates, feel free to reach out:</p>
+        <p>If you want to know more or get involved in advocacy work, reach us through this form:</p>
+        <form>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-        <ul>
-            <li><b>Email:</b> info@transparencyph.org</li>
-            <li><b>Phone:</b> +63 912 345 6789</li>
-            <li><b>Address:</b> TransparencyPH Office, Quezon City, Metro Manila</li>
-        </ul>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-        <p>You can also follow us on social media for updates:</p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section>
+        <h3>Helpful Resources</h3>
         <ul>
-            <li>Facebook: TransparencyPH</li>
-            <li>Twitter: @TransparencyPH</li>
-            <li>Instagram: @TransparencyPH</li>
+            <li><a href="https://psa.gov.ph" target="_blank">Philippine Statistics Authority</a></li>
+            <li><a href="https://www.un.org/sustainabledevelopment/inequality/" target="_blank">UN Sustainable Development Goal 10: Reduced Inequalities</a></li>
+            <li><a href="https://oxfam.org.ph" target="_blank">Oxfam PH Reports</a></li>
         </ul>
     </section>
 </main>
 
-<!-- Footer -->
 <footer>
-    <p>© 2024 TransparencyPH | Infrastructure Tracker</p>
+    <p>© 2025 AwarenessPH | IT/CS 312 Project</p>
 </footer>
-
 </body>
 </html>
