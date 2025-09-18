@@ -98,6 +98,8 @@ nav a.active {
     url("../pictures/inequality illustration.webp") center/cover no-repeat;
   color: #fff;
   padding: 5rem 4rem;
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
 }
 
 
@@ -130,7 +132,7 @@ nav a.active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Subheading under hero */
@@ -179,6 +181,12 @@ section h3 {
   color: #003366;
   font-size: 1.4rem;
 }
+section h2{
+color : #003366 ;
+}
+
+
+
 /* =======================
    Section Images
 ======================= */
@@ -195,7 +203,7 @@ section h3 {
   width: 100%;       /* shrink on small screens */
   height: auto;
   display: block;
-  margin: 1.5rem auto; /* center the image */
+  margin: left; /* center the image */
 }
 
 
