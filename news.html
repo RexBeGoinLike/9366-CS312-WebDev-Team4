@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News & Advocacy | AwarenessPH</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- global -->
+
 </head>
 <body>
 <header>
@@ -23,42 +24,92 @@
     </div>
 </header>
 
-<main>
-    <section>
-        <h2>Latest News & Events</h2>
-        <article>
-            <h3>Philippine Government Expands Social Amelioration Program</h3>
-            <p><em>Published: January 2025</em></p>
-            <p>
-                The Department of Social Welfare and Development (DSWD) announced the expansion
-                of its aid program to reach 5 million more low-income families. The move aims to
-                ease inequality worsened by inflation and rising food prices.
-            </p>
-        </article>
+<div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <span>News</span>
+</div>
 
-        <article>
-            <h3>NGOs Push for Inclusive Education</h3>
-            <p><em>Published: November 2024</em></p>
+<main class="news-grid">
+
+    <!-- Main Headline -->
+    <section class="headline">
+        <img src="pictures/DSWD.webp" alt="DSWD Aid Program">
+        <div class="headline-text">
+            <h2>Government Expands Aid for 5 Million Families</h2>
+            <p class="date">Published: January 2025</p>
             <p>
-                Local NGOs are calling for better funding for public schools in rural areas,
-                citing that lack of resources widens the education gap between rich and poor
-                students.
+                The Philippine government announced the largest expansion of its Social Amelioration Program.
+                Officials say the move is meant to address the widening inequality gap as inflation continues to affect
+                food and fuel prices. Families in rural provinces and urban poor communities are expected to benefit.
             </p>
-        </article>
+            <a href="news-dswd.html" class="read-more">Read Full Story →</a>
+        </div>
     </section>
 
-    <section>
-        <h3>Advocacy Groups Fighting Inequality</h3>
-        <ul>
-            <li><a href="https://oxfam.org.ph" target="_blank">Oxfam Philippines</a></li>
-            <li><a href="https://www.worldbank.org/en/country/philippines" target="_blank">World Bank Philippines</a></li>
-            <li><a href="https://www.unicef.org/philippines/" target="_blank">UNICEF Philippines</a></li>
-        </ul>
+    <!-- Sidebar (Smaller News) -->
+    <aside class="sidebar">
+        <article class="side-article">
+            <img src="pictures/educational.webp" alt="Education inequality">
+            <h3>NGOs Push for Inclusive Education</h3>
+            <p>
+                Advocates say rural schools lack internet, books, and teachers. Students struggle to keep up with
+                urban centers, deepening the education gap.
+            </p>
+        </article>
+
+        <article class="side-article">
+            <img src="pictures/healthcare.jpg" alt="Healthcare access">
+            <h3>Healthcare Access Worsens in Remote Areas</h3>
+            <p>
+                A shortage of doctors in provinces forces patients to travel hours for care, leaving millions
+                underserved.
+            </p>
+        </article>
+
+        <article class="side-article">
+            <img src="pictures/regional.webp" alt="Regional gap">
+            <h3>Regional Inequality Remains a Challenge</h3>
+            <p>
+                While Metro Manila grows, regions like Mindanao remain left behind due to lack of investment and
+                poor infrastructure.
+            </p>
+        </article>
+    </aside>
+
+    <!-- More Articles Below -->
+    <section class="news-list">
+        <article>
+            <img src="pictures/community.jpg" alt="Community efforts">
+            <h3>Communities Lead the Fight Against Inequality</h3>
+            <p>
+                Local groups are stepping up to provide food programs, education campaigns, and healthcare caravans in
+                far-flung areas where government services fall short.
+            </p>
+        </article>
+
+        <article>
+            <img src="pictures/youth.jpg" alt="Youth involvement">
+            <h3>Youth Take Action for Equal Opportunities</h3>
+            <p>
+                From student protests to digital campaigns, young Filipinos are speaking out against the lack of jobs,
+                access to education, and political corruption.
+            </p>
+        </article>
+
+        <article>
+            <img src="pictures/environment.jpg" alt="Environment impact">
+            <h3>Climate Disasters Hit the Poor Hardest</h3>
+            <p>
+                Typhoons and floods continue to devastate poor communities, displacing families who already struggle with
+                unemployment and lack of shelter.
+            </p>
+        </article>
     </section>
 </main>
 
 <footer>
-    <p>© 2025 AwarenessPH | IT/CS 312 Project</p>
+    <p>© 2025 AwarenessPH | IT/CS 312 Project | Educational Use Only</p>
 </footer>
 </body>
 </html>
