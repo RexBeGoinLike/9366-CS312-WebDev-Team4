@@ -269,6 +269,7 @@ section h2 {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1rem;
   overflow: hidden;
 }
 
@@ -280,13 +281,11 @@ section h2 {
 
 .news-list h3 {
   font-size: 1.2rem;
-  margin: 0.8rem;
   color: #003366;
 }
 
 .news-list p {
   font-size: 0.95rem;
-  margin: 0 0.8rem 1rem;
   color: #444;
   line-height: 1.5;
   overflow: hidden;
@@ -299,7 +298,7 @@ section h2 {
 .read-more {
   color: #00509e;
   font-weight: 600;
-  margin: 0 0.8rem 1rem;
+  
 }
 
 .read-more:hover {
