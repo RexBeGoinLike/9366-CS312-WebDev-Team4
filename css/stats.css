@@ -15,41 +15,6 @@ body {
 }
 
 /* ===========================
-   Header & Navigation
-=========================== */
-header {
-  background-color: #003366;
-  color: white;
-  padding: 15px 0;
-}
-
-.nav-container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav a:hover,
-nav a.active {
-  color: #ffcc00;
-}
-
-/* ===========================
    Hero Section
 =========================== */
 .hero {
