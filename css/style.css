@@ -511,7 +511,10 @@ footer {
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
-        background: #1c2541;
+  }
+
+  .breadcrumb{
+    justify-content: flex-start;
   }
 
   nav a {
@@ -592,10 +595,6 @@ footer {
     gap: 1;
   }
 
-  .news-grid article{
-    border-radius: 0;
-  }
-
   /*headline*/
 
   .headline{
@@ -630,6 +629,10 @@ footer {
     flex: 0 0 300px;
   }
 
+  .sidebar article{
+    flex: 0 0 300px;
+  }
+
   @container (width <= 800px){
     .headline img{
       height: 400px;
@@ -648,10 +651,6 @@ footer {
   @container (width <= 600px){
     .news-list{
       grid-template-columns: 1fr;
-    }
-
-    .sidebar{
-      flex-direction: column;
     }
   }
 
