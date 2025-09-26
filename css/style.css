@@ -351,6 +351,7 @@ footer {
 ======================= */
 .cta{
   margin: 0 1rem;
+  padding: 1rem;
 }
 
 
@@ -486,6 +487,11 @@ footer {
     background: #fefcfb;
   }
 
+  body[for="news"]{
+    background: url('../pictures/newspaper-bg.jpg');
+    backdrop-filter: blur(5px) grayscale(90%) brightness(15%);
+  }
+
   header{
     background: #1c2541;
     padding: 20px 0px;
@@ -532,7 +538,7 @@ footer {
   .hero{
     border-radius: 0;
     margin: 0;
-    min-height: 35vh;
+    min-height: 15vh;
   }
 
   .hero-video{
@@ -549,8 +555,7 @@ footer {
   }
 
   .hero p {
-    font-size: 1rem;
-    margin: 0;
+    display: none;
   }
 
   .hero a{
@@ -560,10 +565,6 @@ footer {
   @container (width <= 772px){
     .hero-content h2{
       font-size: 1.9rem;
-    }
-
-    .hero-content p{
-      font-size: 0.8rem;
     }
   }
 
@@ -645,7 +646,7 @@ footer {
   .news-list{
     margin-top: 0;
     grid-template-columns: 1fr 1fr;
-    padding: 0 3rem 1rem 3rem;
+    padding: 0 3rem 0rem 3rem;
   }
 
   @container (width <= 600px){
@@ -671,6 +672,11 @@ footer {
     margin: 0 3rem;
   }
 
+  .cta h3, .cta p, .cta a{
+    text-align: left;
+    color: white;
+  }
+
   .causes-magazine {
     grid-template-columns: 1fr;
   }
@@ -682,5 +688,7 @@ footer {
     width: 100%;
     height: auto;
   }
+
+
 
 }
