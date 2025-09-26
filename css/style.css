@@ -678,4 +678,9 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  .featured-image{
+    width: 100%;
+    height: auto;
+  }
+
 }
