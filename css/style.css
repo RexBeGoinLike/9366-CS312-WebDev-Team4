@@ -622,7 +622,7 @@ footer {
     flex-direction: row;
     scroll-behavior: smooth;
     padding: 0 3rem 0rem 3rem;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .sidebar div{
