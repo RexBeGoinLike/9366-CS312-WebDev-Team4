@@ -56,6 +56,15 @@ nav a.active {
 }
 
 /* =======================
+   Breadcrumbs
+======================= */
+.breadcrumb a{
+  color: #222;
+  margin-left: 0;
+}
+
+
+/* =======================
    Hero Section
 ======================= */
 .site-title {
@@ -73,6 +82,8 @@ nav a.active {
 
 
 .hero {
+  container-type: inline-size;
+  container-name: hero-container;
   position: relative;
   min-height: 50vh;
   display: flex;
@@ -115,7 +126,7 @@ nav a.active {
 .hero h2 {
   font-size: 3rem;
   font-weight: 700;
- color: white;
+  color: white;
   background-clip: text;
   margin-bottom: 2rem;
 }
@@ -189,11 +200,12 @@ section h2 {
    Newspaper Layout
 ======================= */
 .news-grid {
+  container-type: inline-size;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
   padding: 0 1rem;
 }
 
@@ -232,6 +244,7 @@ section h2 {
 .headline p {
   margin: 0.8rem 0;
   line-height: 1.6;
+  -webkit-line-clamp: 10 !important;
 }
 
 /* Sidebar articles */
@@ -327,54 +340,15 @@ footer {
   font-size: 0.9rem;
 }
 
+
 /* =======================
-   Responsive
+   Home - Bottom Section
 ======================= */
-@media (max-width: 900px) {
-  .news-grid {
-    grid-template-columns: 1fr;
-  }
-  .news-list {
-    grid-template-columns: 1fr;
-  }
+.cta{
+  margin: 0 1rem;
+  padding: 1rem;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 0.95rem;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    margin: 0.5rem;
-    display: inline-block;
-  }
-
-  header h1 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  section h3 {
-    font-size: 1.3rem;
-    border-left: none;
-    border-bottom: 3px solid #ffcc00;
-    padding-left: 0;
-    text-align: center;
-  }
-}
 
 /* =======================
    Causes Magazine Layout
@@ -487,41 +461,229 @@ footer {
   color: #444;
 }
 
-/* Responsive */
+.logo {
+  height: 40px;   /* adjust size */
+  width: auto;    /* keeps aspect ratio */
+  display: block;
+}
+.site-title{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* =======================
+   Responsive
+======================= */
 @media (max-width: 900px) {
+  body{
+    font-size: 0.95rem;
+    background: #fefcfb;
+  }
+
+  body[for="news"]{
+    background: url('../pictures/newspaper-bg.jpg');
+    backdrop-filter: blur(5px) grayscale(90%) brightness(15%);
+  }
+
+  header{
+    background: #1c2541;
+    padding: 20px 0px;
+  }
+
+  footer{
+    background: #1c2541;
+  }
+
+  .logo{
+    height: 30px;
+    width: auto;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .breadcrumb{
+    justify-content: flex-start;
+  }
+
+  nav a {
+    margin: 0.5rem;
+    display: inline-block;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /*Hero Section*/
+
+  .hero{
+    border-radius: 0;
+    margin: 0;
+    min-height: 15vh;
+  }
+
+  .hero-video{
+    filter: brightness(70%);
+  }
+
+  .hero-content span{
+    color: #ffcc00;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .hero p {
+    display: none;
+  }
+
+  .hero a{
+    display: none;
+  }
+
+  @container (width <= 772px){
+    .hero-content h2{
+      font-size: 1.9rem;
+    }
+  }
+
+  @container (width <= 430px){
+    .hero-content h2{
+      font-size: 1.5rem;
+    }
+
+    .hero-content p{
+      font-size: 0.6rem;
+    }
+  }
+
+  section h3 {
+    font-size: 1.3rem;
+    border-left: none;
+    border-bottom: 3px solid #ffcc00;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  /*news grid*/
+
+  .news-grid{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 1;
+  }
+
+  /*headline*/
+
+  .headline{
+    background: none;
+    margin-bottom: 0;
+  }
+
+  .headline img{
+    position: absolute;
+    z-index: -1;
+    filter: blur(0.5px) brightness(30%) grayscale(90%);
+  }
+
+  .headline h2, .headline p, .headline a{
+    background: #fefcfb;
+  }
+
+  .date{
+    display: none;
+  }
+
+  /*sidebar*/
+  .sidebar{
+    overflow: scroll;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    padding: 0 3rem 0rem 3rem;
+    gap: 1rem;
+  }
+
+  .sidebar div{
+    flex: 0 0 300px;
+  }
+
+  .sidebar article{
+    flex: 0 0 300px;
+  }
+
+  @container (width <= 800px){
+    .headline img{
+      height: 400px;
+      width: 100%;
+    }
+  }
+
+
+  /*news list*/
+  .news-list{
+    margin-top: 0;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 3rem 0rem 3rem;
+  }
+
+  @container (width <= 600px){
+    .news-list{
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  /*causes*/
+
+  /*cause section*/
+  .cause-grid{
+    display: flex;
+    overflow: scroll;
+  }
+
+  .cause-grid a{
+    flex: 0 0 250px;
+  }
+
+  .cta{
+    margin: 0 3rem;
+  }
+
+  .cta h3, .cta p, .cta a{
+    text-align: left;
+    color: white;
+  }
+
   .causes-magazine {
     grid-template-columns: 1fr;
   }
   .mini-causes {
     grid-template-columns: 1fr 1fr;
   }
-}
-.logo {
-  height: 80px;   /* adjust size */
-  width: auto;    /* keeps aspect ratio */
-  display: block;
-}
-.site-title{
-margin: 0;
- padding: 0;
-  display: flex;
-  align-items: center;
-}
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 40px;
-  background-color: #001f3f; /* example dark blue */
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
 
+  .featured-image{
+    width: 100%;
+    height: auto;
+  }
+
+
+
+}
