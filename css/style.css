@@ -70,12 +70,7 @@ nav a.active {
   background-clip: text;
 }
 
-.flag-icon {
-  width: 70px;
-  height: auto;
-  margin-right: 10px;
-  border-radius: 3px;
-}
+
 
 .hero {
   position: relative;
