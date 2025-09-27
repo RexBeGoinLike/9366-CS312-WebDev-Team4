@@ -1,50 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact & Resources | AwarenessPH</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 </head>
 <body>
 <header>
     <div class="nav-container">
         <h1 class="site-title">
-            <img src="pictures/Thrive.png" alt="Thrive logo" class="logo">        </h1>
+            <img src="pictures/Thrive.png" alt="Thrive logo" class="logo" />
+        </h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="causes.html">Causes</a>
             <a href="stats.html">Statistics</a>
             <a href="news.html">News</a>
             <a href="contact.html" class="active">Contact</a>
+            <a href="about.html">About</a>
         </nav>
     </div>
 </header>
 
-<main>
-    <section>
-        <h2>Contact Us</h2>
-        <p>If you want to know more or get involved in advocacy work, reach us through this form:</p>
-        <form>
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+<main class="contact-container">
+    <!-- About Section -->
+    <section class="about-contact">
+        <h2>Get Involved. Stay Connected.</h2>
+        <p>
+            At <strong>AwarenessPH</strong>, we believe that inequality can be addressed through knowledge,
+            collaboration, and action. Whether you’re a student, researcher, policymaker, or passionate
+            citizen — we’d love to hear from you. Connect with us for partnerships, media inquiries, or to
+            volunteer.
+        </p>
+    </section>
 
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <h3>Our Contact Details</h3>
+        <div class="info-grid">
+            <div>
+                <h4>📍 Office Address</h4>
+                <p>AwarenessPH HQ<br>
+                    123 Equality Street,<br>
+                    Quezon City, Philippines</p>
+            </div>
+            <div>
+                <h4>📧 Email</h4>
+                <p><a href="mailto:info@awarenessph.org">info@awarenessph.org</a></p>
+                <h4>📞 Phone</h4>
+                <p>+63 912 345 6789</p>
+            </div>
+            <div>
+                <h4>🌐 Social Media</h4>
+                <p>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <h3>Contact Us</h3>
+        <p>Fill out the form below and our team will respond as soon as possible.</p>
+        <form class="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-            <button type="submit">Send</button>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is your inquiry about?" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <section>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq">
+            <h4>How can I participate in your advocacy programs?</h4>
+            <p>You can join as a volunteer, attend our webinars, or partner with us on awareness campaigns. Just send us a message above.</p>
+
+            <h4>Can I use your data for academic research?</h4>
+            <p>Yes. All publicly available data on this site may be used for research purposes, provided that proper citation is included.</p>
+
+            <h4>Do you collaborate with schools or LGUs?</h4>
+            <p>Absolutely. We regularly collaborate with educational institutions and local governments. Reach out to discuss partnership opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Helpful Resources -->
+    <section class="resources-section">
         <h3>Helpful Resources</h3>
         <ul>
             <li><a href="https://psa.gov.ph" target="_blank">Philippine Statistics Authority</a></li>
-            <li><a href="https://www.un.org/sustainabledevelopment/inequality/" target="_blank">UN Sustainable Development Goal 10: Reduced Inequalities</a></li>
+            <li><a href="https://www.un.org/sustainabledevelopment/inequality/" target="_blank">UN SDG 10: Reduced Inequalities</a></li>
             <li><a href="https://oxfam.org.ph" target="_blank">Oxfam PH Reports</a></li>
+            <li><a href="https://data.worldbank.org/" target="_blank">World Bank Data Portal</a></li>
         </ul>
     </section>
 </main>

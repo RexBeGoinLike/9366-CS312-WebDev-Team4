@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Statistics | AwarenessPH</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stats.css">
-
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stats.css" />
 </head>
 <body>
 <header>
     <div class="nav-container">
         <h1 class="site-title">
-            <img src="pictures/Thrive.png" alt="Thrive logo" class="logo">
+            <img src="pictures/Thrive.png" alt="Thrive logo" class="logo" />
         </h1>
         <nav>
             <a href="index.html">Home</a>
@@ -21,6 +19,7 @@
             <a href="stats.html" class="active">Statistics</a>
             <a href="news.html">News</a>
             <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
         </nav>
     </div>
 </header>
@@ -28,74 +27,252 @@
 <main class="stats-container">
     <section>
         <h2>Statistical Information</h2>
-        <p>Here are updated reports and statistics that highlight inequality in the Philippines, covering economics, social aspects, health, and the environment.</p>
+        <p>
+            Here are updated reports and statistics that highlight inequality in the
+            Philippines, covering economics, social aspects, health, and the environment.
+        </p>
     </section>
 
     <!-- ECONOMIC INEQUALITY -->
     <section>
         <h3>Economic Inequality</h3>
-        <p>The Philippines has one of the highest inequality rates in Southeast Asia.
+        <p>
+            The Philippines has one of the highest inequality rates in Southeast Asia.
             The <strong>Gini coefficient</strong> stood at around <strong>42.3%</strong> in 2018,
             showing wide income disparities. The <strong>top 1%</strong> of earners capture about
             <strong>17% of national income</strong>, while the bottom 50% share only 14%.
-            Although poverty fell from 49.2% in 1985 to 16.7% in 2018, income gaps remain.</p>
-        <img src="pictures/gini distribution chart.jpg" alt="Gini distribution chart" class="responsive-img">
-        <p class="source-link">
-            Source &amp; More Info: <a href="https://rssocar.psa.gov.ph/content/2021-family-income-inequalities-car-based-gini-coefficient-measure" target="_blank" rel="noopener">2021 Family Income Inequalities (CAR-based Gini Coefficient Measure)</a>
+            Although poverty fell from 49.2% in 1985 to 16.7% in 2018, income gaps remain.
         </p>
 
-        <img src="pictures/poverty rate.png" alt="Poverty rate trend chart" class="responsive-img">
+        <div class="table-container">
+            <h4>Income and Poverty Comparison by Region</h4>
+            <table class="inequality-table">
+                <thead>
+                <tr>
+                    <th>Region</th>
+                    <th>Poverty Incidence (%)</th>
+                    <th>Average Monthly Income (PHP)</th>
+                    <th>Access to Basic Services (%)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>NCR (Metro Manila)</td>
+                    <td>3.9%</td>
+                    <td>30,000</td>
+                    <td>96%</td>
+                </tr>
+                <tr>
+                    <td>Central Luzon</td>
+                    <td>12.4%</td>
+                    <td>22,000</td>
+                    <td>88%</td>
+                </tr>
+                <tr>
+                    <td>Visayas</td>
+                    <td>24.8%</td>
+                    <td>15,000</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>Mindanao</td>
+                    <td>32.1%</td>
+                    <td>12,500</td>
+                    <td>67%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <img src="pictures/gini distribution chart.jpg" alt="Gini distribution chart" class="responsive-img" />
         <p class="source-link">
-            Source &amp; More Info: <a href="https://www.geocurrents.info/blog/2016/02/01/the-geography-of-poverty-and-social-development-in-the-philippines/" target="_blank" rel="noopener">Geography of Poverty & Social Development in the Philippines</a>
+            Source &amp; More Info:
+            <a href="https://rssocar.psa.gov.ph/content/2021-family-income-inequalities-car-based-gini-coefficient-measure" target="_blank" rel="noopener">2021 Family Income Inequalities (CAR-based Gini Coefficient Measure)</a>
+        </p>
+
+        <img src="pictures/poverty rate.png" alt="Poverty rate trend chart" class="responsive-img" />
+        <p class="source-link">
+            Source &amp; More Info:
+            <a href="https://www.geocurrents.info/blog/2016/02/01/the-geography-of-poverty-and-social-development-in-the-philippines/" target="_blank" rel="noopener">Geography of Poverty & Social Development in the Philippines</a>
         </p>
     </section>
 
     <!-- SOCIAL INEQUALITY -->
     <section>
         <h3>Social Inequality</h3>
-        <p>Social inequality is visible in education and labor opportunities. Many Filipinos still
+        <p>
+            Social inequality is visible in education and labor opportunities. Many Filipinos still
             face job insecurity and limited access to higher education. Out-of-school youth reached
-            <strong>2.2 million</strong> in 2022. In addition, the Philippines ranks <strong>102 out of 161</strong>
-            countries in Oxfam’s Global Inequality Index for 2022, reflecting weak policies on labor, taxation, and public services.</p>
-        <img src="pictures/education gap.jpg" alt="Education gap chart" class="responsive-img">
-        <p class="source-link">
-            Source &amp; More Info: <a href="https://www.statista.com/chart/33270/income-inequality-by-country/?srsltid=AfmBOorB5iepyaXaDh1KEhQoA3SPKZZhAblho4zqkMeR-wWfG-mvDFv3" target="_blank" rel="noopener">Income Inequality by Country (Statista)</a>
+            <strong>2.2 million</strong> in 2022. In addition, the Philippines ranks
+            <strong>102 out of 161</strong> countries in Oxfam’s Global Inequality Index for 2022,
+            reflecting weak policies on labor, taxation, and public services.
         </p>
 
-        <img src="pictures/global inequality.jpeg" alt="Global inequality index comparison" class="responsive-img">
+        <div class="table-container">
+            <h4>Education and Employment Access</h4>
+            <table class="inequality-table">
+                <thead>
+                <tr>
+                    <th>Indicator</th>
+                    <th>Urban (%)</th>
+                    <th>Rural (%)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>High School Completion</td>
+                    <td>92%</td>
+                    <td>68%</td>
+                </tr>
+                <tr>
+                    <td>Tertiary Education Enrollment</td>
+                    <td>56%</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>Stable Employment Rate</td>
+                    <td>72%</td>
+                    <td>51%</td>
+                </tr>
+                <tr>
+                    <td>Internet Access</td>
+                    <td>85%</td>
+                    <td>40%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <img src="pictures/education gap.jpg" alt="Education gap chart" class="responsive-img" />
         <p class="source-link">
-            Source &amp; More Info: <a href="https://www.tandfonline.com/doi/full/10.1080/00094056.2025.2486916" target="_blank" rel="noopener">Recent Study on Inequality & Social Development (2025)</a>
+            Source &amp; More Info:
+            <a href="https://www.statista.com/chart/33270/income-inequality-by-country/" target="_blank" rel="noopener">Income Inequality by Country (Statista)</a>
+        </p>
+
+        <img src="pictures/global inequality.jpeg" alt="Global inequality index comparison" class="responsive-img" />
+        <p class="source-link">
+            Source &amp; More Info:
+            <a href="https://www.tandfonline.com/doi/full/10.1080/00094056.2025.2486916" target="_blank" rel="noopener">Recent Study on Inequality & Social Development (2025)</a>
         </p>
     </section>
 
     <!-- HEALTH INEQUALITY -->
     <section>
         <h3>Health Inequality</h3>
-        <p>Health outcomes are unequal between rich and poor Filipinos. About <strong>28.8%</strong> of children
+        <p>
+            Health outcomes are unequal between rich and poor Filipinos. About <strong>28.8%</strong> of children
             under five years old are stunted (2019), mainly due to malnutrition and lack of access to healthcare.
             Wealthier Filipinos also face lifestyle-related illnesses: a study showed higher cardiovascular risks among
-            the richest groups due to elevated cholesterol and glucose levels.</p>
-        <img src="pictures/child stunting.jpg" alt="Child stunting chart" class="responsive-img">
-        <p class="source-link">
-            Source &amp; More Info: <a href="https://www.rappler.com/voices/thought-leaders/opinion-investing-resources-child-nutrition-and-future/" target="_blank" rel="noopener">Investing in Child Nutrition & the Future (Rappler)</a>
+            the richest groups due to elevated cholesterol and glucose levels.
         </p>
 
-        <img src="pictures/cardiovascular.jpg" alt="Cardiovascular risk by wealth group" class="responsive-img">
+        <div class="table-container">
+            <h4>Health Outcomes by Income Group</h4>
+            <table class="inequality-table">
+                <thead>
+                <tr>
+                    <th>Health Indicator</th>
+                    <th>Low-Income</th>
+                    <th>Middle-Income</th>
+                    <th>High-Income</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Child Stunting (%)</td>
+                    <td>38%</td>
+                    <td>22%</td>
+                    <td>8%</td>
+                </tr>
+                <tr>
+                    <td>Infant Mortality (per 1,000)</td>
+                    <td>28</td>
+                    <td>17</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Access to Health Facilities (%)</td>
+                    <td>55%</td>
+                    <td>78%</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>Obesity / Lifestyle Disease Prevalence (%)</td>
+                    <td>12%</td>
+                    <td>21%</td>
+                    <td>32%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <img src="pictures/child stunting.jpg" alt="Child stunting chart" class="responsive-img" />
         <p class="source-link">
-            Source &amp; More Info: <a href="https://www.tandfonline.com/doi/full/10.1080/00094056.2025.2486916" target="_blank" rel="noopener">Recent Study on Health & Inequality (2025)</a>
+            Source &amp; More Info:
+            <a href="https://www.rappler.com/voices/thought-leaders/opinion-investing-resources-child-nutrition-and-future/" target="_blank" rel="noopener">Investing in Child Nutrition & the Future (Rappler)</a>
+        </p>
+
+        <img src="pictures/cardiovascular.jpg" alt="Cardiovascular risk by wealth group" class="responsive-img" />
+        <p class="source-link">
+            Source &amp; More Info:
+            <a href="https://www.tandfonline.com/doi/full/10.1080/00094056.2025.2486916" target="_blank" rel="noopener">Recent Study on Health & Inequality (2025)</a>
         </p>
     </section>
 
     <!-- ENVIRONMENTAL INEQUALITY -->
     <section>
         <h3>Environmental Inequality</h3>
-        <p>Environmental degradation and climate disasters disproportionately affect the poor.
+        <p>
+            Environmental degradation and climate disasters disproportionately affect the poor.
             Typhoons, floods, and rising sea levels hit low-income households hardest due to unsafe housing
             and lack of resources. In rural areas, poor families rely heavily on climate-sensitive sectors like agriculture,
-            worsening the cycle of poverty.</p>
-        <img src="pictures/climate disaster impact.jpg" alt="Climate disaster impact chart" class="responsive-img">
+            worsening the cycle of poverty.
+        </p>
+
+        <div class="table-container">
+            <h4>Impact of Climate Disasters by Income Group</h4>
+            <table class="inequality-table">
+                <thead>
+                <tr>
+                    <th>Indicator</th>
+                    <th>Low-Income</th>
+                    <th>Middle-Income</th>
+                    <th>High-Income</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Average Disaster Damage (₱ per household)</td>
+                    <td>75,000</td>
+                    <td>40,000</td>
+                    <td>15,000</td>
+                </tr>
+                <tr>
+                    <td>Recovery Time (months)</td>
+                    <td>18</td>
+                    <td>9</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Relocation Rate (%)</td>
+                    <td>41%</td>
+                    <td>17%</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>Loss of Livelihood (%)</td>
+                    <td>53%</td>
+                    <td>28%</td>
+                    <td>9%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <img src="pictures/climate disaster impact.jpg" alt="Climate disaster impact chart" class="responsive-img" />
         <p class="source-link">
-            Source &amp; More Info: <a href="https://www.pagasa.dost.gov.ph/information/climate-change-in-the-philippines" target="_blank" rel="noopener">Climate Change in the Philippines (PAGASA)</a>
+            Source &amp; More Info:
+            <a href="https://www.pagasa.dost.gov.ph/information/climate-change-in-the-philippines" target="_blank" rel="noopener">Climate Change in the Philippines (PAGASA)</a>
         </p>
     </section>
 </main>
@@ -103,11 +280,11 @@
 <footer>
     <p>© 2025 AwarenessPH | IT/CS 312 Project</p>
     <p class="footer-sources">
-        More Resources: <br>
+        More Resources: <br />
         <a href="https://rssocar.psa.gov.ph/content/2021-family-income-inequalities-car-based-gini-coefficient-measure" target="_blank" rel="noopener">PSA – Family Income Inequalities (2021)</a> |
         <a href="https://www.geocurrents.info/blog/2016/02/01/the-geography-of-poverty-and-social-development-in-the-philippines/" target="_blank" rel="noopener">Geography of Poverty & Social Development</a> |
         <a href="https://www.tandfonline.com/doi/full/10.1080/00094056.2025.2486916" target="_blank" rel="noopener">Recent Study on Inequality & Social Development (2025)</a> |
-        <a href="https://www.statista.com/chart/33270/income-inequality-by-country/?srsltid=AfmBOorB5iepyaXaDh1KEhQoA3SPKZZhAblho4zqkMeR-wWfG-mvDFv3" target="_blank" rel="noopener">Statista – Income Inequality by Country</a> |
+        <a href="https://www.statista.com/chart/33270/income-inequality-by-country/" target="_blank" rel="noopener">Statista – Income Inequality by Country</a> |
         <a href="https://www.rappler.com/voices/thought-leaders/opinion-investing-resources-child-nutrition-and-future/" target="_blank" rel="noopener">Rappler – Child Nutrition & Future</a> |
         <a href="https://www.pagasa.dost.gov.ph/information/climate-change-in-the-philippines" target="_blank" rel="noopener">PAGASA – Climate Change Info</a>
     </p>
